@@ -1,5 +1,7 @@
 # GSD++
 
+[![npm version](https://img.shields.io/npm/v/gsd-plus-plus)](https://www.npmjs.com/package/gsd-plus-plus)
+
 Code review and documentation overlay for [GSD (Get Shit Done)](https://github.com/get-shit-done-cc/get-shit-done-cc).
 
 GSD++ extends the GSD lifecycle with two new phases — **code review** and **documentation generation** — without forking or modifying the upstream package. It installs as an overlay on top of your existing GSD installation.
