@@ -1,0 +1,56 @@
+{
+  "name": "gsd-plus-plus",
+  "version": "0.1.0",
+  "description": "Code review and documentation overlay for GSD (Get Shit Done)",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sk000f/gsd-plus-plus.git"
+  },
+  "keywords": [
+    "claude-code",
+    "gsd",
+    "get-shit-done",
+    "code-review",
+    "documentation",
+    "ai",
+    "developer-tools"
+  ],
+  "bin": {
+    "gsd-plus-plus": "./dist/bin/install.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "pnpm build && pnpm test"
+  },
+  "files": [
+    "dist/",
+    "agents/",
+    "commands/",
+    "get-shit-done/",
+    "config-extensions.json",
+    "VERSION"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.0"
+  },
+  "dependencies": {
+    "zod": "^3.24.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ],
+    "overrides": {
+      "esbuild": "0.27.3"
+    }
+  }
+}
